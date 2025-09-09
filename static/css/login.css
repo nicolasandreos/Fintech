@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary: #1B2227;
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+}
+
+.background {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #000000;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 1) 0%, rgba(26, 26, 26, 1) 30%, rgba(64, 64, 64, 1) 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    min-width: 20rem;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.3rem;
+    max-width: 50rem;
+    padding: 4rem 3rem;
+}
+
+.container h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.container .description {
+    color: #666666;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+}
+
+.container input {
+    box-shadow: 1.5px 1.5px 5px -2px rgba(82,82,82,0.75);
+}
+
+.container-input-password {
+    position: relative;
+}
+
+.icon-password {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3rem;
+    color: #363636;
+}
+
+.forgot-password {
+    padding: 3rem 0rem;
+    color: var(--primary);
+    text-align: right;
+}
+
+.btn-enter {
+    background: #998100;
+    background: linear-gradient(308deg, rgba(153, 129, 0, 1) 0%, rgba(222, 188, 6, 1) 95%);
+    padding: 1rem 0rem;
+}
+
+.divisoria {
+    margin: 2.5rem 0rem;
+    color: #E5E5E5;
+}

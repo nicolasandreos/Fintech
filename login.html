@@ -4,32 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entre em sua Conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/css/login.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
     <div class="background">
-        <div class="container">
+        <div class="container flex flex-col items-center justify-center">
+
             <h2>Bem Vindo</h2>
-            <p>Entre na sua conta</p>
+            <p class="description text-xl">Entre na sua conta</p>
 
-            <form>
+            <form name="login" id="login" class="w-full">
 
-                <label for="email"></label>
-                <input type="email" name="email" id="email">
-                
-                <label for="password"></label>
-                <input type="password" name="password" id="password">
-    
-                <p>Esqueceu a senha?</p>
+                <div class="flex flex-col gap-[3rem]">
 
-                <button type="submit">Entrar</button>
-                <hr>
-                <p>Não possui uma Conta? <a href="#">Clique Aqui</a></p>
-            
+                    <div class="flex flex-col gap-4">
+                        <label for="email" class="text-2xl">Email</label>
+                        <input type="email" name="email" id="email"
+                            class="border border-[#E5E5E5] px-3 py-2 rounded w-full h-[4rem]">
+                    </div>
+
+                    <div class="flex flex-col gap-4">
+                        <label for="password" class="text-2xl">Senha</label>
+                        <div class="container-input-password">
+                            <input type="password" name="password" id="password"
+                                class="border border-[#E5E5E5] px-3 py-2 pr-10 rounded w-full h-[4rem]">
+                            <i class="fa-solid fa-eye icon-password"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <p class="forgot-password text-2xl">Esqueceu a senha?</p>
+
+                <button type="submit" class="w-full rounded-lg mt-4 btn-enter text-2xl font-bold">Entrar</button>
+
+                <hr class="divisoria">
+
+                <p class="text-2xl text-center"><span class="text-[#666666]">Não possui uma Conta?</span> <a href="#" class="font-bold">Clique Aqui</a></p>
             </form>
 
 
         </div>
     </div>
+    
+
     
 </body>
 </html>
